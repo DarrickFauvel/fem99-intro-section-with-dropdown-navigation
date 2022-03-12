@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Mobile screenshot](./screenshot-mobile.png)
-![Desktop screenshot](./screenshot-desktop.png)
+<img src="https://github.com/DarrickFauvel/fem09-single-price-grid-component/blob/main/screenshot-mobile.png" width="200" />
+<img src="https://github.com/DarrickFauvel/fem09-single-price-grid-component/blob/main/screenshot-desktop.png" width="400" />
 
 ### Links
 

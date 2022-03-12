@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/DarrickFauvel/fem09-single-price-grid-component](https://github.com/DarrickFauvel/fem09-single-price-grid-component)
+- Solution URL: [https://www.frontendmentor.io/solutions/single-price-grid-component-html-sass-grid-and-vite-bPAyz8cJe](https://www.frontendmentor.io/solutions/single-price-grid-component-html-sass-grid-and-vite-bPAyz8cJe)
 - Live Site URL: [https://fem09-single-price-grid-component-drrck.netlify.app/](https://fem09-single-price-grid-component-drrck.netlify.app/)
 
 ## My process

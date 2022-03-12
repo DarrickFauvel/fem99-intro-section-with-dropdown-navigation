@@ -1,6 +1,11 @@
 @use '../abstracts' as *;
 
 .main {
-  justify-self: center;
-  align-self: center;
+  margin-top: calc((20 / 16) * 1em);
+
+  &.footer-height-offset {
+    @media (min-width: $breakpoint-1) {
+      margin-top: calc((40 / 16) * 1em);
+    }
+  }
 }

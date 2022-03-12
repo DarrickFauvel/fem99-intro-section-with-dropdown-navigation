@@ -1,0 +1,7 @@
+.footer {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding: calc((16 / 16) * 1em);
+  min-height: calc((40 / 16) * 1em);
+}

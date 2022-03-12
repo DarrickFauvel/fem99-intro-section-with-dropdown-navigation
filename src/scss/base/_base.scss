@@ -1,14 +1,19 @@
 @use '../abstracts' as *;
 
 body {
-  font-family: $ff-base;
-  font-size: $fs-base;
-  color: $fc-base;
-  font-weight: 400;
-  background-color: $bgc-base;
-
   display: grid;
-  place-content: center;
+  justify-content: center;
+  align-content: flex-start;
+
+  font-family: $ff-body;
+  font-size: $fs-body;
+  color: $fc-body;
+  font-weight: 400;
+  background-color: hsl(204, 43%, 93%);
+
+  @media (min-width: $breakpoint-1) {
+    place-content: center;
+  }
 }
 
 .visually-hidden {

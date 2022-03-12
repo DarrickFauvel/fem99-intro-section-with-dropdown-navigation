@@ -1,14 +1,15 @@
-$hue: 0;
-$sat: 0%;
-
 // Primary colors
-$clr-black: hsl($hue, $sat, 0%);
+$color-cyan: hsl(179, 62%, 43%);
+$color-bright-yellow: hsl(71, 73%, 54%);
 
 // Neutral colors
-$clr-white: hsl($hue, $sat, 100%);
+$color-light-gray: hsl(204, 43%, 93%);
+$color-grayish-blue: hsl(218, 22%, 67%);
+$color-black: hsl(0, 0%, 0%);
+$color-white: hsl(0, 0%, 100%);
 
-$fc-base: $clr-black;
-$bgc-base: $clr-white;
+$fc-body: $color-black;
+$bgc-body: $color-cyan;
 
-$fc-primary: $clr-black;
-$bgc-primary: $clr-white;
+$fc-primary: $color-black;
+$bgc-primary: $color-white;

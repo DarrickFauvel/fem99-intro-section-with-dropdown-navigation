@@ -1,9 +1,11 @@
-$font-url: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap';
-$font-family: 'Roboto', sans-serif;
-$font-size: 1.6rem;
+@use './functions' as *;
 
-$ff-base: $font-family;
-$fs-base: $font-size;
+$font-url: 'https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap';
+$font-family: 'Karla', sans-serif;
+$font-size: pxToRem(14);
+
+$ff-body: $font-family;
+$fs-body: $font-size;
 
 $ff-primary: $font-family;
 $fs-primary: $font-size;

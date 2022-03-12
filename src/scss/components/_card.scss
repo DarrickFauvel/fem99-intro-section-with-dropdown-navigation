@@ -140,6 +140,14 @@
       text-align: center;
       border-radius: calc((5 / 16) * 1em);
       box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        background-color: transparent;
+        color: #fff;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011),
+          inset 0 0 0 2px hsl(71, 73%, 54%);
+      }
     }
   }
 

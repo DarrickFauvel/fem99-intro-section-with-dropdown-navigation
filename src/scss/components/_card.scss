@@ -1,6 +1,167 @@
 @use '../abstracts' as *;
 
 .card {
-  padding-inline: calc((24 / 16) * 1em);
-  padding-block: calc((28 / 16) * 1em);
+  max-width: 311px;
+  border-top-left-radius: calc((5 / 16) * 1em);
+  border-top-right-radius: calc((5 / 16) * 1em);
+  overflow: hidden;
+  box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+
+  @media (min-width: $breakpoint-1) {
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+    grid-template-areas:
+      'primary primary'
+      'secondary tertiary';
+    max-width: 635px;
+
+    border-top-left-radius: calc((8 / 16) * 1em);
+    border-top-right-radius: calc((8 / 16) * 1em);
+  }
+}
+
+.section {
+  padding: calc((24 / 16) * 1em);
+
+  @media (min-width: 700px) {
+    padding: calc((40 / 16) * 1em);
+  }
+
+  &.community {
+    grid-area: primary;
+    background-color: #fff;
+
+    & .title {
+      font-size: pxToRem(20);
+      color: hsl(179, 62%, 43%);
+      line-height: calc(23.38 / 20);
+      letter-spacing: calc(-0.25 / 20);
+      margin-bottom: calc((24 / 20) * 1em);
+
+      @media (min-width: $breakpoint-1) {
+        font-size: pxToRem(24);
+        line-height: calc(28.06 / 24);
+        letter-spacing: calc(-0.3 / 20);
+        margin-bottom: calc((24 / 24) * 1em);
+      }
+    }
+
+    & .subtitle {
+      font-size: pxToRem(15);
+      font-weight: 700;
+      line-height: calc(20 / 15);
+      letter-spacing: calc(-0.19 / 15);
+      color: #c0df33;
+      margin-bottom: calc((16 / 15) * 1em);
+
+      @media (min-width: $breakpoint-1) {
+        font-size: pxToRem(18);
+        line-height: calc(21.04 / 18);
+        letter-spacing: calc(-0.22 / 18);
+        margin-bottom: calc((11 / 18) * 1em);
+      }
+    }
+
+    & .description {
+      font-size: pxToRem(14);
+      line-height: calc(26 / 14);
+      letter-spacing: calc(-0.17 / 14);
+      color: hsl(218, 22%, 67%);
+      margin-bottom: calc((8 / 14) * 1em);
+
+      @media (min-width: $breakpoint-1) {
+        font-size: pxToRem(16);
+        line-height: calc(26 / 16);
+        letter-spacing: calc(-0.2 / 16);
+      }
+    }
+  }
+
+  &.subscription {
+    grid-area: secondary;
+    background-color: #2ab3b1;
+    color: #fff;
+
+    & .title {
+      font-size: pxToRem(18);
+      font-weight: 700;
+      line-height: calc(21.04 / 18);
+      letter-spacing: calc(-0.22 / 18);
+      margin-bottom: calc((8 / 18) * 1em);
+
+      @media (min-width: $breakpoint-1) {
+        margin-bottom: calc((18 / 18) * 1em);
+      }
+    }
+
+    & .cost {
+      display: flex;
+      align-items: center;
+      gap: calc((11 / 16) * 1em);
+      margin-bottom: calc((1 / 16) * 1em);
+
+      @media (min-width: $breakpoint-1) {
+        margin-bottom: calc((4 / 16) * 1em);
+      }
+
+      & .price {
+        font-size: pxToRem(32);
+        line-height: calc(37.41 / 32);
+        letter-spacing: calc(-0.4 / 32);
+        font-weight: 700;
+      }
+
+      & .frequency {
+        font-size: pxToRem(16);
+        font-weight: 400;
+        line-height: calc((26 / 16) * 1em);
+        letter-spacing: calc(-0.2 / 16);
+        opacity: 0.5;
+      }
+    }
+
+    & .description {
+      font-size: pxToRem(16);
+      line-height: calc(26 / 16);
+      letter-spacing: calc((-0.2 / 16) * 1em);
+      margin-bottom: calc((26 / 16) * 1em);
+    }
+
+    & .btn {
+      display: block;
+      background-color: hsl(71, 73%, 54%);
+      font-size: pxToRem(16);
+      font-weight: 700;
+      line-height: calc(18.7 / 16);
+      letter-spacing: calc((-0.2 / 16) * 1em);
+      color: #fff;
+      padding: calc((14 / 16) * 1em);
+      text-decoration: none;
+      text-align: center;
+      border-radius: calc((5 / 16) * 1em);
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+    }
+  }
+
+  &.why {
+    grid-area: tertiary;
+    background-color: #4abfbc;
+    color: #fff;
+
+    & .title {
+      font-size: pxToRem(18);
+      line-height: calc(21.04 / 18);
+      letter-spacing: calc((-0.22 / 18) * 1em);
+      margin-bottom: calc((18 / 18) * 1em);
+    }
+
+    & .reasons {
+      list-style-type: none;
+      padding: 0;
+      font-size: pxToRem(14);
+      line-height: calc(20 / 14);
+      letter-spacing: calc((-0.17 / 14) * 1em);
+      opacity: 0.75;
+    }
+  }
 }

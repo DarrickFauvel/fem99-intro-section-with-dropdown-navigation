@@ -21,7 +21,7 @@
 .section {
   padding: calc((24 / 16) * 1em);
 
-  @media (min-width: 700px) {
+  @media (min-width: $breakpoint-1) {
     padding: calc((40 / 16) * 1em);
   }
 

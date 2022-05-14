@@ -1,0 +1,12 @@
+@use '../abstracts' as *;
+
+.main {
+  justify-self: center;
+  align-self: center;
+}
+
+// Testing autoprefixer
+h1 {
+  // This should be pink
+  color: lch(65% 132 360);
+}

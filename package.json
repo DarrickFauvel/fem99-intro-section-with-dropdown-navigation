@@ -1,5 +1,5 @@
 {
-  "name": "fem00-vite-open-props-starter",
+  "name": "starter-vite-sass",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -8,6 +8,14 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^2.8.0"
+    "postcss": "^8.4.13",
+    "postcss-import": "^14.1.0",
+    "postcss-nested": "^5.0.6",
+    "postcss-preset-env": "^7.5.0",
+    "sass": "^1.51.0",
+    "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "open-props": "^1.3.16"
   }
 }
